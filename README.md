@@ -119,7 +119,7 @@ user    0m4.062s
 sys     0m0.037s
 ```
 
-**Generating a 5000x5000 data file:**
+**Generating a 5000x5000 data file with multiple worker threads:**
 ```sh
 time node dist/mandelbrot_threaded.js png=1 width=5000 height=5000 > image.dat
 
