@@ -8,5 +8,5 @@
         "outDir": "dist",
         "rootDir": "."
     },
-    "include": ["mandelbrot.ts"]
+    "include": ["mandelbrot.ts", "mandelbrot_threaded.ts"]
 }
