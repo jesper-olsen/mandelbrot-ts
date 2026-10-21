@@ -30,7 +30,7 @@ Single Thread/Multi-thread shows the number of seconds it takes to do a 5000x500
 | Rust        | [mandelbrot-rs](https://github.com/jesper-olsen/mandelbrot-rs)       |             4.7 |          1.3 |  1.4 |               0.8   |
 | Swift       | [mandelbrot-swift](https://github.com/jesper-olsen/mandelbrot-swift) |             4.5 |          1.2 |  1.3 |               0.7   |
 | Tcl         | [mandelbrot-tcl](https://github.com/jesper-olsen/mandelbrot-tcl)     |           306.9 |              |      |                     |
-| **Typescript** | [mandelbrot-ts](https://github.com/jesper-olsen/mandelbrot-ts)     |            4.1 |              |      |                     |
+| **Typescript** | [mandelbrot-ts](https://github.com/jesper-olsen/mandelbrot-ts)    |            4.1 |           0.8 |      |                     |
 | Zig         | [mandelbrot-zig](https://github.com/jesper-olsen/mandelbrot-zig)     |             4.9 |          0.9 |  0.7 |               0.3   |
 
 ---
@@ -117,5 +117,11 @@ user    0m4.062s
 sys     0m0.037s
 ```
 
+**Generating a 5000x5000 data file:**
+```sh
+time node dist/mandelbrot_threaded.js png=1 width=5000 height=5000 > image.dat
 
-
+real    0m0.812s
+user    0m5.713s
+sys     0m0.101s
+```
